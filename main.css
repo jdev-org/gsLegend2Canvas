@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+#parent-container{
+    max-width: 200px;
+}
+
+.legend-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 5px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.legend-item canvas {
+  flex-shrink: 0;
+  width: 10% !important;
+  height: 1em;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 20px;
+}
+
+.legend-item span {
+  flex-grow: 1;
+  margin-left: 0.8em;
+  word-break: break-word;
+  font-size: 0.9em;
+  color: #333;
+}
